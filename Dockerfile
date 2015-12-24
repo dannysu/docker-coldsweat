@@ -1,6 +1,9 @@
-FROM tatsushid/tinycore-python:2.7
+FROM debian:jessie
 
-RUN easy_install pip
+RUN apt-get update
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get install -y --no-install-recommends python python-pip
 
 ADD coldsweat /coldsweat
 ADD customization/config /coldsweat/etc/config
