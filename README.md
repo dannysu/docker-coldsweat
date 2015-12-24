@@ -23,7 +23,6 @@ Finally, run the container in daemon mode. Map the port appropriately for your s
 
 ```
 > docker run -d --name=coldsweat -v $(pwd)/data:/coldsweat/data -p 8080:8080 dannysu/coldsweat
-
 ```
 
   [1]: https://github.com/passiomatic/coldsweat
